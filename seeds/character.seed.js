@@ -2,6 +2,7 @@ const Character = require('../models/Character.model')
 const openConnection = require('../db/')
 const mongoose = require('mongoose')
 
+
 const characters = [
   {
     name: "Han Solo",
@@ -23,7 +24,7 @@ const characters = [
   }
 ]
 
-async function seedDatabase () {
+async function seedDatabase() {
   try {
     const db = await openConnection()
     console.log(`Succesfully connected to ${db.connection.name} database.`);
